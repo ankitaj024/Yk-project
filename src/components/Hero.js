@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-function HeroSection() {
+function Hero() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
@@ -70,4 +70,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default Hero;
