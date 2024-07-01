@@ -8,7 +8,10 @@
   font-family: "Work Sans", sans-serif;
   }
   
-  
+  .no-scroll {
+    overflow: hidden;
+  }
+
   @keyframes fade-in-up {
     0% {
       opacity: 0;

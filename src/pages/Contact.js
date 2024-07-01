@@ -1,13 +1,12 @@
 import React from 'react';
 import Navbar2 from '../components/Navbar-2';
 import { ChevronDownIcon } from '@heroicons/react/20/solid';
-import { Switch } from '@headlessui/react';
 import Footer from '../components/Footer';
 
 function Contact() {
   return (
-    <div className='w-screen h-screen'>
-      <div className="w-screen border-2 border-black flex flex-col items-center justify-center">
+    <div className='w-screen h-screen font-dancing-script overflow-x-hidden'>
+      <div className="w-screen flex flex-col items-center justify-center">
       <Navbar2 />
       <div className="flex items-center justify-center h-72 w-full">
         <h1 className="text-center text-7xl font-bold">Contact Us</h1>
@@ -145,7 +144,7 @@ function Contact() {
             <p className="text-lg">Phone: <span className="font-semibold">+91 5456565667657</span></p>
           </div>
         </div>
-        <Footer />
+        <Footer/>
       </div>
     </div>
     </div>
