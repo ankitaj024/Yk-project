@@ -1,4 +1,4 @@
-import React from 'react'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               import React from 'react'
 import Header from '../components/Header'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
         <Header/>
-        <Navbar/>
+        <Navbar upper="28" up="0"/>
          <Hero/>
         <Footer/>
     </>

@@ -16,7 +16,7 @@ const Header = () => {
                     <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2023/02/08131807/aa-by-mohammed-siyamand-dribbble.png" alt="Logo" className="h-10" />
                 </div>
                 <h1 className="flex-grow text-center text-3xl md:text-5xl text-black font-dancing-script">
-                    YK Engineers and Architects
+                    YK Engineers And Architects
                 </h1>
                 <div className="block md:hidden">
                     <button onClick={toggleMenu} className="text-black focus:outline-none">
