@@ -31,13 +31,9 @@ function Projects() {
           </div>
         </div>
       </div>
-      <div className="">
-        <div>
-           <h1>Experts at Creating Spectacular Homes</h1>
-        </div>
-        <div>
-          <h1>From unique design ideas to elements that reflect the owner’s personality, the abodes we lovingly bring to life leave most speechless.</h1>
-        </div>
+      <div class=" ">
+    <h1 class="font-bold text-black text-3xl flex justify-center m-8">Experts at Creating Spectacular Homes</h1>
+    <h2 class="text-gray-600 text-xl mx-12 flex justify-center text-center mt-5 mb-5">From unique design ideas to elements that reflect the owner's personality, the abodes we lovingly bring to life leave most speechless.</h2>
       </div>
     </>
   )
