@@ -1,25 +1,59 @@
+/* About.css */
 @keyframes slide-up {
-  0% {
+  from {
     transform: translateY(100%);
   }
-  100% {
+  to {
     transform: translateY(0);
   }
 }
 
-.animate-slide-up {
-  animation: slide-up 1s ease-out forwards;
-}
-
 @keyframes zoom-out {
-  0% {
-    transform: scale(1.1);
+  from {
+    transform: scale(1.2);
   }
-  100% {
+  to {
     transform: scale(1);
   }
 }
 
+.animate-slide-up {
+  animation: slide-up 1s forwards;
+}
+
 .animate-zoom-out {
-  animation: zoom-out 1s ease-out forwards;
+  animation: zoom-out 1s forwards;
+}
+
+.image-wrapper {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-wrapper span {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+}
+
+@media (max-width: 768px) {
+  .image-wrapper img {
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .image-wrapper img {
+    height: 300px;
+  }
 }

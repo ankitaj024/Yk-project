@@ -7,9 +7,11 @@ function Home() {
   return (
     <>
         <Header/>
-        <Navbar upper="28" up="0"/>
+        <Navbar up="28"/>
          <Hero/>
-        <Footer/>
+      <div>
+        <Footer></Footer>
+        </div>
     </>
   )
 }

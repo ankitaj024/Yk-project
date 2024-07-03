@@ -16,7 +16,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="h-[100vh] md:h-[72vh] lg:h-[76vh] overflow-hidden">
+    <div className=" h-[100vh]  md:h-[89vh] overflow-x-hidden">
       <video
         className="absolute inset-0 h-full w-full object-cover"
         src="video.mp4" // Replace with your video URL

@@ -44,11 +44,7 @@ const Navbar2 = () => {
             isOpen
               ? 'flex fixed top-0 left-0 h-full w-full bg-gray-200 flex-col items-center justify-center'
               : 'hidden'
-<<<<<<< HEAD
           } lg:flex lg:space-x-8 lg:items-center gap-10 flex-col lg:flex-row font-dancing-script`}
-=======
-          } lg:flex lg:space-x-8 lg:items-center flex-col lg:flex-row font-dancing-script`}
->>>>>>> 54252d2b439568499dd173a6cd816b6e52d23393
         >
           <li className="nav-item">
             <Link
@@ -101,8 +97,4 @@ const Navbar2 = () => {
   );
 };
 
-<<<<<<< HEAD
 export default Navbar2;
-=======
-export default Navbar2;
->>>>>>> 54252d2b439568499dd173a6cd816b6e52d23393
