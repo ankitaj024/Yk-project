@@ -16,10 +16,12 @@ const About = () => {
     threshold: 0.5,
   });
 
+  
+
   return (
     <div className='overflow-x-hidden no-scroll relative'>
       <div className="relative h-screen w-full bg-cover bg-center" style={{ backgroundImage: 'url(About.jpg)' }}>
-        <Navbar up="9" />
+        <Navbar upperMargin = {'top-5'} />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div
             ref={firstRef}
@@ -42,15 +44,13 @@ const About = () => {
             </div>
           </div>
           <div className={`w-full md:w-1/2 p-2 ${secondInView ? 'animate-zoom-out' : ''}`}>
-            
               <div className="relative h-[300px] sm:h-64 text-center  mx-auto md:h-60 lg:h-96 m-4  w-[92%] bg-cover bg-center  md:mb-0" style={{ backgroundImage: 'url(Image.jpg)', width:'92%' }}>
                 <div className="absolute bottom-0 left-0 right-0 bg-black bg-opacity-50 text-white text-center p-2">Name 1</div>
-              
-            </div>
+              </div>
           </div>
         </div>
       </div>
-      {/* <Images></Images> */}
+      <Images></Images>
       <Footer />
     </div>
   );

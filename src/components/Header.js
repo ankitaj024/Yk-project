@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
             </header>
             {/* Render Navbar only on smaller screens or if the menu is open */}
-            {isOpen && <Navbar isOpen={isOpen} toggleMenu={toggleMenu} />}
+            {isOpen && <Navbar isOpen={isOpen} toggleMenu={toggleMenu}/>}
             {/* Render Navbar on larger screens */}
             {!isOpen && <div className="hidden">
                 <Navbar isOpen={true} toggleMenu={toggleMenu} />

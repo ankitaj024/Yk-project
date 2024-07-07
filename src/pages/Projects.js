@@ -1,8 +1,9 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import Navbar from '../components/Navbar';
-import './About.css'; // Import custom CSS for keyframes animation
-import Footer from '../components/Footer';
+import './Projects.css'; 
+
+
 
 function Projects() {
   const [firstRef, firstInView] = useInView({
@@ -19,7 +20,7 @@ function Projects() {
   return (
       <>
       <div className="relative h-screen w-full bg-cover bg-center" style={{ backgroundImage: 'url(About.jpg)' }}>
-        <Navbar upper="5" up="2" />
+       <Navbar upperMargin = {'top-5'} />
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
           <div
             ref={firstRef}

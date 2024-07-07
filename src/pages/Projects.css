@@ -1,0 +1,38 @@
+/* Animation for the Projects title */
+@keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 1s forwards;
+  }
+
+  /* Keyframes for zoom-out animation */
+@keyframes zoomOut {
+    from {
+      transform: scale(1.1);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  /* Apply the animation to the slider */
+  .slider-zoom-out {
+    animation: zoomOut 1s ease-in-out;
+  }
+  
+  .project-image {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .project-image:hover {
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+  }
+  
+  

@@ -6,12 +6,12 @@ import Hero from '../components/Hero'
 function Home() {
   return (
     <>
-        <Header/>
-        <Navbar up="28"/>
+         <Header/>
+          <Navbar upperMargin={'top-28'}/>
          <Hero/>
       <div>
         <Footer></Footer>
-        </div>
+      </div>
     </>
   )
 }

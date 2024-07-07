@@ -2,9 +2,9 @@ import React from 'react';
 import { FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
-const Navbar = ({ isOpen, toggleMenu, up }) => {
+const Navbar = ({ isOpen, toggleMenu, upperMargin}) => {
   return (
-    <nav className={`fixed inset-0 bg-black bg-opacity-90 z-20 ${isOpen ? 'flex' : 'hidden'} md:flex md:relative md:top-${up} md:rounded-full mx-auto p-4 w-full md:w-[70%] md:bg-opacity-50`}>
+    <nav className={`fixed inset-0 bg-black bg-opacity-90 z-20 ${isOpen ? 'flex' : 'hidden'} md:flex md:relative md:${upperMargin} md:rounded-full mx-auto p-4 w-full md:w-[70%] md:bg-opacity-50`}>
       <div className="flex flex-col md:flex-row w-full h-full justify-center items-center">
         <button onClick={toggleMenu} className="absolute top-4 right-4 text-white focus:outline-none md:hidden">
           <FaTimes className="w-8 h-8" />
