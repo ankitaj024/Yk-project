@@ -6,7 +6,10 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import './About.css'; // Import custom CSS for keyframes animation
 import Images from '../components/Images';
 import { Link } from 'react-router-dom';
+
+
 const About = () => {
+  
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

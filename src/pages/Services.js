@@ -26,10 +26,7 @@ const Services = () => {
     threshold: 0.5,
   });
 
-  const [secondRef, secondInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
+  
 
   return (
     <div className='overflow-x-hidden no-scroll relative'>

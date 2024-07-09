@@ -1,20 +1,9 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
 import "../pages/About.css"; // Ensure the correct path to your CSS file
-
 import  InfiniteMovingCardsDemo  from "./InfiniteMovingCardsDemo";
 
 function Images() {
-  const [firstRef, firstInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
-  const [secondRef, secondInView] = useInView({
-    triggerOnce: true,
-    threshold: 0.5,
-  });
-
+ 
   return (
     <div className="overflow-x-hidden no-scroll bg-black bg-opacity-50 relative">
       <div className="relative  h-screen w-full bg-cover bg-center" style={{ backgroundImage: "url(about.jpg)"}}>

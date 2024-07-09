@@ -1,44 +1,33 @@
-// src/components/InfiniteMovingCardsDemo.jsx
 import React from "react";
 import InfiniteLooper from '../ui/InfiniteLooper';
 
-const testimonials = [
-  {
-    src: "url(Image.jpg)",
-    name: 'Name1',
-  },
-  {
-    src: "url(Image.jpg)",
-    name: 'Name2',
-  },
-  {
-    src: "url(Image.jpg)",
-    name: 'Name3',
-  },
-  {
-    src: "url(Image.jpg)",
-    name: 'Name4',
-  },
-  {
-    src: "url(Image.jpg)",
-    name: 'Nme5',
-  },
-  // {
-  //   src: "url(Image.jpg)",
-  //   name: 'Name6',
-  // },
-  // {
-  //   src: "url(Image.jpg)",
-  //   name: 'Name7',
-  // },
-  // {
-  //   src: "url(Image.jpg)",
-  //   name: 'Name8',
-  // },
- 
-];
+
 
 function InfiniteMovingCardsDemo() {
+   
+  const testimonials = [
+    {
+      src: "url(Image.jpg)",
+      name: 'Name1',
+    },
+    {
+      src: "url(Image.jpg)",
+      name: 'Name2',
+    },
+    {
+      src: "url(Image.jpg)",
+      name: 'Name3',
+    },
+    {
+      src: "url(Image.jpg)",
+      name: 'Name4',
+    },
+    {
+      src: "url(Image.jpg)",
+      name: 'Nme5',
+    }
+  ];
+
   return (
     <div className="h-[40rem] rounded-md flex flex-col antialiased bg-transparent items-center justify-center relative overflow-hidden">
       <InfiniteLooper speed={15} direction="right">

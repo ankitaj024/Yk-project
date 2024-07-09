@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { useInView } from 'react-intersection-observer';
+import MessageForm from '../components/MessageForm';
+
 
 
 function Contact() {
@@ -61,9 +63,9 @@ function Contact() {
                 </div>
             </div>
       
-            <div className="p-6 bg-opacity-50 bg-white-800 flex justify-center ">
-                <div className="flex flex-col gap-3 md:flex-row w-full md:gap-5 max-w-5xl md:space-y-10 ">
-                    <div className="w-full md:w-1/2 h-96 md:h-auto ">
+            <div className="bg-opacity-50 bg-white-800 flex justify-center ">
+                <div className="flex flex-col gap-3 md:flex-row w-full  md:gap-10  max-w-5xl">
+                    <div className="w-full md:w-1/2  h-96  md:h-auto ">
                         <iframe
                             title="Google Map"
                             className="w-full h-full border-0"
@@ -74,42 +76,28 @@ function Contact() {
                         ></iframe>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <form className="bg-white p-2 md:p-6 rounded-lg shadow-lg ">
-                            <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
-                            <div className="mb-3">
-                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
-                                    Name
-                                </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Your Name" />
-                            </div>
-                            <div className="mb-3">
-                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="email">
-                                    Email
-                                </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Your Email" />
-                            </div>
-                            <div className="mb-3">
-                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="message">
-                                    Message
-                                </label>
-                                <textarea className="shadow appearance-none border rounded w-full py-2 resize-none px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" rows={8} id="message" placeholder="Your Message"></textarea>
-                            </div>
-                            <div className="mb-3">
-                                <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="phone">
-                                    Phone Number
-                                </label>
-                                <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="text" placeholder="Your Phone Number" />
-                            </div>
-                            <div className="flex items-center justify-between">
-                                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                                    Send
-                                </button>
-                            </div>
-                        </form>
+                      <MessageForm></MessageForm>
                     </div>
                 </div>
             </div>
-      
+            
+            <div className='w-full flex  flex-col sm:flex-row items-center justify-between space-y-2 py-10 px-32' >
+                <div className='flex flex-col items-center md:items-start  space-y-2 w-screen sm:w-[200px]'>
+                    <h1 className='text-3xl font-semibold'>Address</h1>
+                    <p>Nawalgarh, India, 162012</p>
+                </div>
+                <div className=" w-screen sm:w-[180px]">
+                    <div className='flex flex-col items-center md:items-start  space-y-2'>
+                       <h1 className='text-3xl font-semibold'>Email</h1>
+                       <p>abc@gmail.com</p>
+                    </div>
+                    <div className='flex flex-col items-center md:items-start  space-y-2'>
+                        <h1 className='text-3xl font-semibold'>Phone</h1>
+                        <p>+91 45436474574</p>
+                    </div>
+                </div>
+            </div>
+
             <Footer></Footer>
         </div>
     );
