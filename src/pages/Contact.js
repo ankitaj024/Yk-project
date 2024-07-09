@@ -2,14 +2,22 @@ import React, { useState, useEffect } from 'react';
 import Navbar from '../components/Navbar'; // Assuming you have a predefined Navbar component
 import Footer from '../components/Footer';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { useInView } from 'react-intersection-observer';
+
 
 function Contact() {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
-    }
+    } 
 
+    const [firstRef, firstInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.5,
+      });
+    
     useEffect(() => {
         if (isOpen) {
             document.body.classList.add('no-scroll');
@@ -19,7 +27,14 @@ function Contact() {
     }, [isOpen]);
 
     return (
-        <div className="relative top-0 h-screen bg-cover bg-center" style={{ backgroundImage: 'url(About.jpg)' }}>
+        <div className="relative top-0 h-screen bg-cover  bg-center" style={{ backgroundImage: 'url(About.jpg)' }}>
+
+        <div className="logo absolute top-4 left-5 md:hidden">
+            <Link to="/" className="text-black text-2xl font-bold">
+              Logo
+            </Link>
+        </div>
+
             <div className="block md:hidden">
                 <button onClick={toggleMenu} className="text-black absolute right-5 top-5 focus:outline-none">
                     {isOpen ? <FaTimes className="w-6 h-6 text-white" /> : <FaBars className="w-6 h-6 text-black" />}
@@ -28,14 +43,20 @@ function Contact() {
             
             {/* Always show the navbar on md size and above */}
             <div className="hidden md:block">
-                <Navbar upperMargin={'top-5'} isOpen={true} toggleMenu={toggleMenu} />
+                <Navbar upperMargin = {"top-5"} isOpen={true} toggleMenu={toggleMenu} />
             </div>
 
             {/* Show the navbar based on isOpen state for small screens */}
-            {isOpen && <Navbar upperMargin={'top-5'} isOpen={isOpen} toggleMenu={toggleMenu} />}
+            <div className='md:hidden'>
+                {isOpen && <Navbar upperMargin = {"top-5"} isOpen={isOpen} toggleMenu={toggleMenu} />}
+            </div>
+            
+
 
             <div className="flex items-center justify-center h-full">
-                <div className="text-center animate-fade-up">
+                <div             ref={firstRef}
+            className={`text-white text-center p-6 transform transition-transform duration-1000 ${firstInView ? 'animate-slide-up' : 'translate-y-full'
+              }`}>
                     <h1 className="text-white text-4xl md:text-6xl font-bold mb-4">Contact Us</h1>
                 </div>
             </div>
