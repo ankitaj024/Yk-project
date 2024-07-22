@@ -10,7 +10,7 @@ const Header = () => {
     };
 
     return (
-        <div className="absolute z-10 w-full  top-0">
+        <div className="absolute z-10 w-full top-0">
             <header className="flex flex-col md:flex-row items-center justify-between py-8 px-4 bg-white bg-opacity-25">
                 <div className="logo mb-4 md:mb-0">
                     <img src="https://bcassetcdn.com/public/blog/wp-content/uploads/2023/02/08131807/aa-by-mohammed-siyamand-dribbble.png" alt="Logo" className="h-10" />
@@ -25,7 +25,7 @@ const Header = () => {
                 </div>
             </header>
             {/* Render Navbar only on smaller screens or if the menu is open */}
-            {isOpen && <Navbar isOpen={isOpen} toggleMenu={toggleMenu} />}
+            {isOpen && <Navbar isOpen={isOpen} toggleMenu={toggleMenu}/>}
             {/* Render Navbar on larger screens */}
             {!isOpen && <div className="hidden">
                 <Navbar isOpen={true} toggleMenu={toggleMenu} />

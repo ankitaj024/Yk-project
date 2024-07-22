@@ -16,7 +16,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="h-[100vh] md:h-[72vh] lg:h-[76vh] overflow-hidden">
+    <div className=" h-[100vh]  md:h-[89vh] overflow-x-hidden">
       <video
         className="absolute inset-0 h-full w-full object-cover"
         src="video.mp4" // Replace with your video URL
@@ -47,7 +47,7 @@ function Hero() {
               <motion.h1
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.7, ease: "easeInOut" }}
+                transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
                 className="text-yellow-100 text-5xl  md:text-9xl  mb-2"
               >
                 We
@@ -55,7 +55,7 @@ function Hero() {
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1, delay: 0.9, ease: "easeInOut" }}
+                transition={{ duration: 1, delay: 0.5, ease: "easeInOut" }}
                 className="text-white text-2xl md:text-4xl  flex flex-col gap-3 justify-center items-center"
               >
                 <motion.p className="text-center">
