@@ -56,13 +56,13 @@ function Commerical() {
           </div>
   
           <div className="hidden md:block">
-            <Navbar upperMargin={"top-2"} isOpen={true} toggleMenu={toggleMenu} />
+            <Navbar upperMargin='5' isOpen={true} toggleMenu={toggleMenu} />
           </div>
   
           <div className="md:hidden">
             {isOpen && (
               <Navbar
-                upperMargin={"top-5"}
+                
                 isOpen={isOpen}
                 toggleMenu={toggleMenu}
               />

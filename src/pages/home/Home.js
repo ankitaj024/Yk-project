@@ -7,7 +7,7 @@ function Home() {
   return (
     <>
       <Header />
-        <Navbar upperMargin={"top-28"} />
+        <Navbar upperMargin = '111' />
       <Hero />
       <div>
         <Footer></Footer>

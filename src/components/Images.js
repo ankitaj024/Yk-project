@@ -8,7 +8,7 @@ function Images() {
       <div
         className="absolute top-0 left-0 h-full w-full bg-cover bg-center"
         style={{
-          backgroundImage: "url(bg-abouts/bg-about3.jpg)",
+         
           backgroundAttachment: "fixed",
         }}
       ></div>

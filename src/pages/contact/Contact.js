@@ -63,14 +63,14 @@ function Contact() {
 
         {/* Always show the navbar on md size and above */}
         <div className="hidden md:block">
-          <Navbar upperMargin={"top-2"} isOpen={true} toggleMenu={toggleMenu} />
+          <Navbar upperMargin="5" isOpen={true} toggleMenu={toggleMenu} />
         </div>
 
         {/* Show the navbar based on isOpen state for small screens */}
         <div className="md:hidden">
           {isOpen && (
             <Navbar
-              upperMargin={"top-5"}
+              
               isOpen={isOpen}
               toggleMenu={toggleMenu}
             />

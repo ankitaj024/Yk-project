@@ -51,11 +51,11 @@ const About = () => {
             
             {/* Always show the navbar on md size and above */}
             <div className="hidden md:block">
-                <Navbar upperMargin={"top-2"} isOpen={true} toggleMenu={toggleMenu} />
+                <Navbar upperMargin="5" isOpen={true} toggleMenu={toggleMenu} />
             </div>
 
             <div className='md:hidden'>
-                {isOpen && <Navbar upperMargin={"top-5"} isOpen={isOpen} toggleMenu={toggleMenu} />}
+                {isOpen && <Navbar  isOpen={isOpen} toggleMenu={toggleMenu} />}
             </div>
 
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">

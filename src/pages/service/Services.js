@@ -45,12 +45,12 @@ const Services = () => {
             
             {/* Always show the navbar on md size and above */}
             <div className="hidden md:block">
-                <Navbar upperMargin={"top-2"} isOpen={true} toggleMenu={toggleMenu} />
+                <Navbar upperMargin='5' isOpen={true} toggleMenu={toggleMenu} />
             </div>
 
             {/* Show the navbar based on isOpen state for small screens */}
             <div className='md:hidden'>
-                {isOpen && <Navbar upperMargin={"top-5"} isOpen={isOpen} toggleMenu={toggleMenu} />}
+                {isOpen && <Navbar  isOpen={isOpen} toggleMenu={toggleMenu} />}
             </div>
 
         <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
@@ -69,7 +69,7 @@ const Services = () => {
         <div class="flex h-screen items-center justify-center bg-black bg-opacity-50">
           <div class="group hover:cursor-pointer text-white">
             <h1 class="text-5xl font-bold group-hover:hidden md:text-7xl">Residential</h1>
-            <Link class="hidden text-5xl font-bold group-hover:shadow-lg group-hover:flex md:text-7xl text-wrap text-center" to='/services/residential'>Show Projects</Link>
+            <Link class="hidden text-5xl font-bold group-hover:shadow-lg group-hover:flex md:text-3xl text-wrap text-center" to='/services/residential'>Show Projects</Link>
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@ const Services = () => {
         <div class="flex h-screen items-center justify-center bg-black bg-opacity-50">
           <div class="group hover:cursor-pointer text-white">
             <h1 class="text-5xl font-bold group-hover:hidden md:text-7xl">Housing</h1>
-            <Link class="hidden text-5xl font-bold group-hover:shadow-lg group-hover:flex md:text-7xl text-wrap text-center"  to='/services/housing'>Show Projects</Link>
+            <Link class="hidden text-5xl font-bold group-hover:shadow-lg group-hover:flex md:text-3xl text-wrap text-center"  to='/services/housing'>Show Projects</Link>
           </div>
         </div>
       </div>
@@ -91,7 +91,7 @@ const Services = () => {
         <div class="flex h-screen items-center justify-center bg-black bg-opacity-50">
           <div class="group hover:cursor-pointer text-white">
             <h1 class="text-5xl font-bold group-hover:hidden md:text-7xl">Commercial</h1>
-            <Link class="hidden text-5xl font-bold group-hover:shadow-lg group-hover:flex md:text-7xl text-wrap text-center"   to='/services/commerical'>Show Projects</Link>
+            <Link class="hidden text-5xl font-bold group-hover:shadow-lg group-hover:flex md:text-3xl text-wrap text-center border-w"   to='/services/commerical'>Show Projects</Link>
           </div>
         </div>
       </div>
