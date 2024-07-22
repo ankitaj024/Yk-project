@@ -5,10 +5,10 @@ function Hero() {
   const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
-    // Set loaded to true after a delay to ensure initial content is visible
+   
     const delayTimer = setTimeout(() => {
       setLoaded(true);
-    }, 1000); // 1 second delay to start animation after initial load
+    }, 1000); 
 
     return () => {
       clearTimeout(delayTimer);
@@ -19,7 +19,7 @@ function Hero() {
     <div className=" h-[100vh]  md:h-[89vh] overflow-x-hidden">
       <video
         className="absolute inset-0 h-full w-full object-cover"
-        src="video.mp4" // Replace with your video URL
+        src="bg-home/trimvideo.mp4" 
         autoPlay
         loop
         muted

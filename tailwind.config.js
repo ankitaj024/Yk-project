@@ -15,6 +15,7 @@ module.exports = {
         slow: 'moveRight 36s linear infinite',
         fast: 'moveRight 5s linear infinite',
       },
+     
     },
   },
   plugins: [

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import Navbar from './Navbar';
 
 const Header = () => {
@@ -20,7 +20,7 @@ const Header = () => {
                 </h1>
                 <div className="block md:hidden">
                     <button onClick={toggleMenu} className="text-black focus:outline-none">
-                        {isOpen ? <FaTimes className="w-6 h-6 text-white" /> : <FaBars className="w-6 h-6 text-black" />}
+                        {isOpen ? (null) : <FaBars className="w-6 h-6 text-black" />}
                     </button>
                 </div>
             </header>

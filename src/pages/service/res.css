@@ -1,0 +1,10 @@
+/* Add this CSS for the hover effect */
+.hover-effect {
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  }
+  
+  .hover-effect:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.3); /* Light black background color */
+  }
+  
