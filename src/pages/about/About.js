@@ -66,7 +66,7 @@ const About = () => {
             }`}
           >
             <h1 className="text-5xl  md:text-7xl  font-bold">About Us</h1>
-            <p className="mt-4 text-base md:text-lg lg:text-2xl">We are passionate about delivering the best food to your doorstep.</p>
+            <p className="mt-4 text-base md:text-lg lg:text-2xl">We are passionate about delivering the best Design to your doorstep.</p>
           </div>
         </div>
       </div>
@@ -75,8 +75,8 @@ const About = () => {
         <div className="absolute top-0 inset-0 bg-black bg-opacity-50 flex flex-col md:flex-row items-center justify-evenly">
           <div className='relative w-full p-4 md:w-1/2'>
             <div ref={secondRef} className={`text-white text-center flex flex-col transform transition-transform duration-1000 ${secondInView ? 'animate-slide-up' : 'translate-y-full'}`}>
-              <h1 className="text-5xl md:text-7xl font-bold">Our Mission</h1>
-              <p className="mt-4 text-base md:text-lg lg:text-2xl">To provide fast, reliable, and delicious food delivery services.</p>
+              <h1 className="text-5xl md:text-7xl font-bold">Our Team</h1>
+              <p className="mt-4 text-base md:text-lg lg:text-2xl">To provide fast, reliable, and innovative Architecture services.</p>
             </div>
           </div>
           <div className={`w-full md:w-1/2 p-2 ${secondInView ? 'animate-zoom-out' : ''}`}>

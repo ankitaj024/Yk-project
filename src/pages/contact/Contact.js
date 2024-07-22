@@ -94,14 +94,14 @@ function Contact() {
       <div className="bg-opacity-50 bg-white-800 pt-14 md:pb-5 flex justify-center  bg-gray-200 ">
         <div className="flex flex-col gap-3 md:flex-row w-full  md:gap-10  max-w-5xl">
           <div className="w-full md:w-1/2  h-96  md:h-auto ">
-            <iframe
-              title="Google Map"
-              className="w-full h-full border-0"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509062!2d144.95373531531588!3d-37.81627927975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577f9c25fa6843b!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1600056073848!5m2!1sen!2sau"
-              allowFullScreen=""
-              aria-hidden="false"
-              tabIndex="0"
-            ></iframe>
+          <iframe
+        title="Google Map"
+        className="w-full h-full border-0"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3454.7247188498865!2d75.2671406!3d27.8501338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396cb4c08ea9131d%3A0x18a7b98c22e9dc13!2sYK%20Engineering%20Services!5e0!3m2!1sen!2sin!4v1623170610161!5m2!1sen!2sin"
+        allowFullScreen
+        aria-hidden="false"
+        tabIndex="0"
+      ></iframe>
           </div>
           <div className="w-full md:w-1/2">
             <MessageForm></MessageForm>
@@ -112,16 +112,16 @@ function Contact() {
       <div className="w-full flex  flex-col sm:flex-row items-center bg-gray-200 justify-between space-y-2 py-10 px-32">
         <div className="flex flex-col items-center md:items-start  space-y-2 w-screen sm:w-[200px]">
           <h1 className="text-3xl font-semibold">Address</h1>
-          <p>Nawalgarh, India, 162012</p>
+          <p>YK Engineers And Architecture, Nawalgarh,Rajasthan, India, 333042</p>
         </div>
         <div className=" w-screen sm:w-[180px]">
           <div className="flex flex-col items-center md:items-start  space-y-2">
             <h1 className="text-3xl font-semibold">Email</h1>
-            <p>abc@gmail.com</p>
+            <p>Ykengineeringservices@gmail.com </p>
           </div>
           <div className="flex flex-col items-center md:items-start  space-y-2">
             <h1 className="text-3xl font-semibold">Phone</h1>
-            <p>+91 45436474574</p>
+            <p>+91 8005528285</p>
           </div>
         </div>
       </div>
